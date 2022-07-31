@@ -131,3 +131,160 @@ body {
 .header__social-item-link:hover {
     text-decoration-color: #515076;
 }
+
+/* PROMO */
+
+.promo {
+    position: relative;
+    margin-bottom: 576px;
+}
+
+.promo::before {
+    position: absolute;
+    z-index: -1;
+    top: 500px;
+    left: 0;
+    width: 818px;
+    height: 648px;
+    content: '';
+    background-image: url(../img/promo-before.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.promo::after {
+    position: absolute;
+    z-index: -1;
+    top: -128px;
+    right: 0;
+    width: 837px;
+    height: 963px;
+    content: '';
+    background-image: url(../img/promo-after.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.promo__title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 230px;
+    line-height: 92.4%;
+    display: flex;
+    align-items: center;
+    color: #515076;
+    margin-bottom: 60px;
+}
+
+.promo__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-height: 1090px;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.promo__item {
+    max-width: 390px;
+}
+
+.promo__subtitle {
+    max-width: 255px;
+    font-size: 36px;
+    line-height: 132.67%;
+    color: #63678C;
+    margin-top: 30px;
+    margin-bottom: 555px;
+}
+
+.promo__text b{
+    font-weight: 700;
+    color: #8888A8;
+}
+
+.promo__btn {
+    display: block;
+    width: 270px;
+    padding: 27px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #515076;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.32em;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.promo__details {
+    margin-top: 536px;
+    margin-left: auto;
+    max-width: 172px;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.promo__details small {
+    font-size: 37px;
+    font-weight: 200;
+}
+
+.promo__disclaimer {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 109.4%;
+    color: #757AA5;
+}
+
+@keyframes promo-opacity1 {
+    0% { opacity: 0; }
+    3.3% { opacity: 1; }
+    29.7% { opacity: 1; }
+    33% { opacity: 0; }
+}
+@keyframes promo-opacity2 {
+    33% { opacity: 0; }
+    36.6% { opacity: 1; }
+    62.7% { opacity: 1; }
+    66% { opacity: 0; }
+}
+@keyframes promo-opacity3 {
+    66% { opacity: 0; }
+    69.9% { opacity: 1; }
+    95.7% { opacity: 1; }
+    99% { opacity: 0; }
+}
+
+.promo__gallery-img {
+    position: absolute;
+    z-index: -1;
+    bottom: -1000px;
+    right: 0;
+    opacity: 0;
+    animation-duration: 30s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: -2;
+}
+
+.promo__gallery-img:nth-of-type(1) {
+    animation-name: promo-opacity1;
+}
+
+.promo__gallery-img:nth-of-type(2) {
+    animation-name: promo-opacity2;
+}
+
+.promo__gallery-img:nth-of-type(3) {
+    animation-name: promo-opacity3;
+}

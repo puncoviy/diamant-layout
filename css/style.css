@@ -30,8 +30,6 @@ body {
     font-weight: 200;
     font-size: 70px;
     line-height: 109.4%;
-    display: flex;
-    align-items: center;
     color: #757AA5;
 }
 
@@ -53,10 +51,7 @@ body {
 
 .header__link {
     text-decoration: none;
-}
-
-.header__logo {
-    margin-right: 70px;
+    margin-right: 40px;
 }
 
 .header__menu {
@@ -287,4 +282,110 @@ body {
 
 .promo__gallery-img:nth-of-type(3) {
     animation-name: promo-opacity3;
+}
+
+/* CATALOGUE */
+
+.catalogue {
+    position: relative;
+    margin-bottom: 180px;
+}
+
+.catalogue::before {
+    position: absolute;
+    z-index: -1;
+    top: -269px;
+    left: 0;
+    width: 900px;
+    height: 811px;
+    content: '';
+    background-image: url(../img/cat-decor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.catalogue__title {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.catalogue__list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.catalogue__item {
+    position: relative;
+    width: 329px;
+    min-height: 521px;
+    padding: 62px 20px 55px;
+    font-size: 20px;
+    line-height: 135.99%;
+    color: #515076;
+    background-color: #F7F7FA;
+}
+.catalogue__item:nth-child(2) {
+    padding: 69px 20px 55px;
+    width: 380px;
+    min-height: 600px;
+}
+.catalogue__item:nth-child(2)::before {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 67px;
+    height: 67px;
+    content: '';
+    background-image: url(../img/sale.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.catalogue__item-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 244px;
+    margin-bottom: 18px;
+}
+.catalogue__item:nth-child(2) .catalogue__item-img {
+    height: 325px;
+}
+.catalogue__item-purpose {
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 199.99%;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+    color: #A5A3B9;
+    margin-bottom: 20px;
+}
+.catalogue__item-name {
+    padding-left: 18px;
+    margin-bottom: 40px;
+}
+.catalogue__item-price {
+    position: relative;
+    padding-left: 18px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 135.99%;
+}
+.catalogue__item:nth-child(2) .catalogue__item-price::before {
+    bottom: 0;
+    content: '3 750';
+    padding-right: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135.99%;
+    text-decoration: line-through;
+    color: rgba(81, 80, 118, 0.6);
+}
+.catalogue__item-cart {
+    position: absolute;
+    cursor: pointer;
+    padding: 10px;
+    right: 27px;
+    bottom: 45px;
 }

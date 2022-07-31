@@ -615,3 +615,76 @@ body {
 .stack__item .catalogue__item-cart {
     bottom: 27px;
 }
+
+/* STATISTICS */
+
+.statistics {
+    position: relative;
+    margin-bottom: 125px;
+    min-height: 1023px;
+    background-color: #EDECF6;
+    background-image: url(../img/stat.jpg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.statistics::before {
+    position: absolute;
+    content: 'Diamaint';
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 330px;
+    line-height: 92.4%;
+    text-align: center;
+    width: 100%;
+    top: -215px;
+    color: #D6D4E7;
+}
+
+.statistics::after {
+    position: absolute;
+    content: '';
+    width: 638px;
+    height: 1196px;
+    top: 191px;
+    right: 0;
+    background-image: url(../img/stat-decor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.statistics__inner {
+    position: relative;
+    z-index: 2;
+    width: 462px;
+    padding-top: 247px;
+    margin-left: auto;
+}
+
+.statistics__title {
+    width: 350px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 179.99%;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #A5A3B9;
+    margin-bottom: 30px;
+}
+
+.statistics__data {
+    font-weight: 300;
+    font-size: 120px;
+    line-height: 109.4%;
+    display: flex;
+    align-items: center;
+    color: #515076;
+}
+
+.statistics__data-gender {
+    font-weight: 200;
+    font-size: 70px;
+    margin-bottom: 61px;
+}

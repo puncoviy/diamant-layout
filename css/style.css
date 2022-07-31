@@ -2,10 +2,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    color: #636363;
+    font-size: 18px;
+    line-height: 170%;
+    color: #888794;
 }
+
+/* font-family: 'Playfair Display', serif; */
 
 .container {
     max-width: 1200px;
@@ -25,8 +27,10 @@ body {
 }
 
 .title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 124.41%;
-    color: #000;
+    font-weight: 200;
+    font-size: 70px;
+    line-height: 109.4%;
+    display: flex;
+    align-items: center;
+    color: #757AA5;
 }

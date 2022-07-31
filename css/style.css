@@ -10,7 +10,7 @@ body {
 /* font-family: 'Playfair Display', serif; */
 
 .container {
-    max-width: 1200px;
+    max-width: 1420px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
@@ -33,4 +33,101 @@ body {
     display: flex;
     align-items: center;
     color: #757AA5;
+}
+
+/* HEADER */
+
+.header {
+    padding-top: 12px;
+    padding-bottom: 21px;
+    background-color: #EDECF7;
+    margin-bottom: 128px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__link {
+    text-decoration: none;
+}
+
+.header__logo {
+    margin-right: 70px;
+}
+
+.header__menu {
+    margin-right: auto;
+}
+
+.header__menu-list {
+    display: flex;
+    gap: 10px;
+}
+
+.header__menu-link {
+    padding: 25px 15px;
+    text-decoration: none;
+    color: #515076;
+    opacity: 0.5;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 3px;
+    transition: background-color .7s, opacity .7s;
+}
+
+.header__menu-link:hover {
+    background-color: rgba(81, 80, 118, 0.1);
+    opacity: 1;
+}
+
+.header__cart {
+    cursor: pointer;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__cart::before {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: 0;
+    right: -6px;
+    padding-top: 2px;
+    background: #757AA5;
+    border-radius: 50%;
+    content: '1';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #fff;
+}
+
+.header__socia-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__social-item-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 38px;
+    color: #515076;
+    text-decoration-color: transparent;
+    transition: text-decoration-color .7s;
+}
+
+.header__social-item-link:hover {
+    text-decoration-color: #515076;
 }

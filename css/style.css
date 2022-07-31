@@ -765,3 +765,116 @@ body {
     color: #515076;
     transition: text-decoration-color .7s;
 }
+
+/* AUTHORS */
+
+.authors__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #fafafa;
+}
+
+.authors__inner::before {
+    position: absolute;
+    width: 48%;
+    height: 514px;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: #fff;
+}
+
+.authors__inner::before {
+    position: absolute;
+}
+
+.authors__info {
+    position: relative;
+    width: 665px;
+}
+
+.authors__title {
+    position: relative;
+    z-index: 2;
+    width: 360px;
+    margin-bottom: 93px;
+}
+
+.authors__name {
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 199.99%;
+    color: #515076;
+    margin-bottom: 35px;   
+}
+
+.authors__text {
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    margin-bottom: 40px;
+}
+
+.authors__quote {
+    position: relative;
+    z-index: 2;
+    margin-left: 67px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 63px;
+}
+
+.authors__quote::before {
+    position: absolute;
+    left: -50px;
+    content: '“';
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.authors__gallery {
+    display: flex;
+    gap: 60px;
+}
+
+.authors__min-img {
+    cursor: pointer;
+    width: 153px;
+    filter: drop-shadow(0px -6px 0px #515076);
+    opacity: 0.5;
+    transition: opacity .7s;
+}
+
+.authors__min-img:hover {
+    opacity: 1;
+}
+
+.authors__image {
+    position: relative;
+}
+
+.authors__image::before {
+    position: absolute;
+    width: 399px;
+    height: 399px;
+    top: -112px;
+    left: -280px;
+    content: '';
+    background-image: url(../img/author-decor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.authors__image-img {
+    position: relative;
+    z-index: 1;
+    margin-right: 79px;
+    max-width: 603px;
+}

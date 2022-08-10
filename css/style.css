@@ -200,9 +200,13 @@ body {
 }
 
 .promo__btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
     display: block;
     width: 270px;
     padding: 27px 10px;
+    border: 2px solid #515076;
     margin-left: auto;
     margin-right: auto;
     background-color: #515076;
@@ -216,6 +220,28 @@ body {
     letter-spacing: 0.32em;
     color: #FFFFFF;
     opacity: 0.9;
+    transition: color .5s;
+}
+
+.promo__btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    transition: width .5s;
+    border-radius: 100px;
+    z-index: -1;
+}
+
+.promo__btn:hover {
+    color: #515076;
+}
+
+.promo__btn:hover::before {
+    width: 100%;
 }
 
 .promo__details {
@@ -422,6 +448,11 @@ body {
     gap: 19px;
 }
 
+.sale__controls-left,
+.sale__controls-right {
+    cursor: pointer;
+}
+
 .sale__controls-left .sale__controls-img {
     transform: rotate(-180deg);
 }
@@ -432,7 +463,8 @@ body {
     transition: opacity .7s;
 }
 
-.sale__controls-img:hover {
+.sale__controls-left:hover .sale__controls-img,
+.sale__controls-right:hover .sale__controls-img {
     opacity: 1;
 }
 
@@ -443,16 +475,11 @@ body {
 }
 
 .sale__slider-item {
-    margin-left: 40px;
-    margin-bottom: 40px;
     position: relative;
-    padding-left: 62px;
     width: 810px;
     height: 521px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background: #F7F7FA;
+    margin-left: 40px;
+    margin-bottom: 40px;
     box-shadow: -40px 40px 0px #515076;
 }
 
@@ -468,6 +495,25 @@ body {
     transform: rotate(-90deg);
     bottom: 107px;
     left: -133px;
+}
+
+.sale__slider-item-inner {
+    position: absolute;
+    width: 810px;
+    height: 521px;
+    padding-left: 62px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #F7F7FA;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .7s;
+}
+
+.sale__slider-item-inner.active {
+    z-index: 1;
+    opacity: 1;
 }
 
 .sale__slider-item-title {
@@ -523,6 +569,7 @@ body {
 
 .stack::before {
     position: absolute;
+    z-index: -1;
     content: '';
     width: 1083px;
     height: 1424px;
@@ -864,7 +911,7 @@ body {
     position: absolute;
     width: 399px;
     height: 399px;
-    top: -112px;
+    bottom: 387px;
     left: -280px;
     content: '';
     background-image: url(../img/author-decor.png);

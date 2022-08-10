@@ -39,19 +39,19 @@
                 <nav class="header__menu">
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">О продукте</a>
+                            <a class="header__menu-link" href="#promo">О продукте</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Каталог</a>
+                            <a class="header__menu-link" href="#catalogue">Каталог</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Акции</a>
+                            <a class="header__menu-link" href="#sale">Акции</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Полезное</a>
+                            <a class="header__menu-link" href="#useful">Полезное</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Авторы</a>
+                            <a class="header__menu-link" href="#authors">Авторы</a>
                         </li>
                     </ul>
                 </nav>
@@ -89,7 +89,7 @@
                         <p class="promo__text">Используем всю силу природы, а так же новейшие разработки индустрии вкупе традиционными ирландскими рецептами для того, чтобы придать вашей коже здоровый и цветущий вид</p>
                     </li>
                     <li class="promo__item">
-                        <a class="promo__btn" href="#">Выбрать продукт</a>
+                        <a class="promo__btn" href="#catalogue">Выбрать продукт</a>
                     </li>
                     <li class="promo__item">
                         <p class="promo__text">В основе — активные натуральные комплексы, витамины С, А, РР, В И Е, масла, воски, минералы и натуральные солнцезащитные компоненты. </p>
@@ -107,7 +107,7 @@
             <img class="promo__gallery-img" src="./img/promo3.jpg" alt="Натуральные ингридиенты">
         </section>
 
-        <section class="catalogue">
+        <section class="catalogue" id="catalogue">
             <div class="container">
                 <h2 class="catalogue__title title">Выбери свой продукт</h2>
                 <ul class="catalogue__list">
@@ -136,7 +136,7 @@
             </div>
         </section>
 
-        <section class="sale">
+        <section class="sale" id="sale">
             <div class="container">
                 <div class="sale__inner">
                     <h2 class="sale__title title">Акции</h2>
@@ -151,9 +151,21 @@
                     </div>
                     <div class="sale__slider">
                         <div class="sale__slider-item">
-                            <h3 class="sale__slider-item-title">Invisible symphony — ваша волшебная палочка для борьбы с несовершенствами</h3>
-                            <p class="sale__slider-item-text">Сочетая энергию природы и возможности науки восстанавливает вашу кожу, помогает регенерации клеток, разглаживает рельеф, интенсивно увлажняет надолго.</p>
-                            <img class="sale__slider-item-img" src="./img/cat2.png" alt="Invisible symphony">
+                            <div class="sale__slider-item-inner active">
+                                <h3 class="sale__slider-item-title">Invisible symphony — ваша волшебная палочка для борьбы с несовершенствами</h3>
+                                <p class="sale__slider-item-text">Сочетая энергию природы и возможности науки восстанавливает вашу кожу, помогает регенерации клеток, разглаживает рельеф, интенсивно увлажняет надолго.</p>
+                                <img class="sale__slider-item-img" src="./img/cat2.png" alt="Invisible symphony">
+                            </div>
+                            <div class="sale__slider-item-inner">
+                                <h3 class="sale__slider-item-title">Invisible symphony — ваша волшебная палочка для борьбы с несовершенствами</h3>
+                                <p class="sale__slider-item-text">Сочетая энергию природы и возможности науки восстанавливает вашу кожу, помогает регенерации клеток, разглаживает рельеф, интенсивно увлажняет надолго.</p>
+                                <img class="sale__slider-item-img" src="./img/cat1.png" alt="Invisible symphony">
+                            </div>
+                            <div class="sale__slider-item-inner">
+                                <h3 class="sale__slider-item-title">Invisible symphony — ваша волшебная палочка для борьбы с несовершенствами</h3>
+                                <p class="sale__slider-item-text">Сочетая энергию природы и возможности науки восстанавливает вашу кожу, помогает регенерации клеток, разглаживает рельеф, интенсивно увлажняет надолго.</p>
+                                <img class="sale__slider-item-img" src="./img/cat3.png" alt="Invisible symphony">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -206,7 +218,7 @@
             </div>
         </section>
 
-        <section class="useful">
+        <section class="useful" id="useful">
             <div class="container">
                 <h2 class="useful__title title">Полезно узнать</h2>
                 <ul class="useful__list">
@@ -246,7 +258,7 @@
             </div>
         </section>
 
-        <section class="authors">
+        <section class="authors" id="authors">
             <div class="container">
                 <div class="authors__inner">
                     <div class="authors__info">
@@ -289,6 +301,7 @@
             </div>
         </div>
     </footer>
-    
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

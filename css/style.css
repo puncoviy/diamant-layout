@@ -1082,6 +1082,65 @@ body {
     padding-bottom: 70px;
 }
 
+@media (max-width: 1420px) {
+    .promo__inner{
+        max-height: 1150px;
+        gap: 100px 0;
+        width: 1104px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .promo__item {
+        max-width: 370px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .promo::before {
+        top: 170px;
+    }
+    .promo::after {
+        width: 360px;
+        height: 411px;
+    }
+    .promo__title {
+        font-size: 200px;
+        text-align: center;
+        display: block;
+    }
+    .promo__inner {
+        flex-direction: row;
+        width: 100%;
+        gap: 15px;
+        margin: unset;
+        max-height: unset;
+    }
+    .promo__item {
+        max-width: unset;
+        width: 100%;
+    }
+    .promo__subtitle {
+        max-width: unset;
+        margin-bottom: 30px;
+    }
+    .promo__details {
+        position: relative;
+        margin-top: 0;
+        max-width: unset;
+        text-transform: none;
+    }
+    .promo__details::before {
+        content: '*';
+    }
+    .promo__details small,
+    .promo__details br {
+        display: none;
+    }
+    .promo__gallery-img:nth-of-type(2) {
+        bottom: -1100px;
+    }
+}
+
 @media (max-width: 950px) {
     .header {
         padding-top: 0;
@@ -1135,6 +1194,55 @@ body {
         font-size: 12px;
         line-height: 12px;
     }
+    .promo::before {
+        top: 340px;
+        width: 467px;
+        height: 366px;
+    }
+    .promo__title {
+        font-size: 160px;
+    }
+    .promo__details {
+        letter-spacing: normal;
+    }
+    .promo__gallery-img {
+        height: 1300px;
+        bottom: -837px;
+    }
+    .promo__gallery-img:nth-of-type(2) {
+        bottom: -880px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        margin-top: -100px;
+    }
+    .promo {
+        margin-top: 100px;
+    }
+    .promo::after {
+        width: 230px;
+        height: 264px;
+        opacity: 0.3;
+        top: 100px;
+    }
+    .promo__title {
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .promo__title {
+        font-size: 70px;
+    }
+    .promo__gallery-img {
+        height: 780px;
+        bottom: -490px;
+    }
+    .promo__gallery-img:nth-of-type(2) {
+        bottom: -510px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1143,5 +1251,26 @@ body {
     }
     .header__socia-list {
         display: none;
+    }
+    .promo {
+        margin-bottom: 370px;
+    }
+    .promo::before {
+        top: 146px;
+        width: 299px;
+        height: 259px;
+    }
+    .promo::after {
+        width: 230px;
+        height: 264px;
+        opacity: 0.3;
+        top: 602px;
+    }
+    .promo__gallery-img {
+        height: 595px;
+        bottom: -430px;
+    }
+    .promo__gallery-img:nth-of-type(2) {
+        bottom: -400px;
     }
 }

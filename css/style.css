@@ -36,9 +36,13 @@ body {
 /* HEADER */
 
 .header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
     padding-top: 12px;
     padding-bottom: 21px;
     background-color: #EDECF7;
+    margin-top: -238px;
     margin-bottom: 128px;
 }
 
@@ -91,7 +95,7 @@ body {
     align-items: center;
 }
 
-.header__cart::before {
+.header__cart-item {
     position: absolute;
     width: 21px;
     height: 21px;
@@ -100,7 +104,6 @@ body {
     padding-top: 2px;
     background: #757AA5;
     border-radius: 50%;
-    content: '1';
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -131,6 +134,7 @@ body {
 
 .promo {
     position: relative;
+    margin-top: 238px;
     margin-bottom: 576px;
 }
 
@@ -155,7 +159,7 @@ body {
     width: 837px;
     height: 963px;
     content: '';
-    background-image: url(../img/promo-after.jpg);
+    background-image: url(../img/promo-after.png);
     background-size: cover;
     background-repeat: no-repeat;
 }

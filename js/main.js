@@ -2,6 +2,9 @@ let scroll = new SmoothScroll('a[href*="#"]', {
     speed: 300
 });
 
+const cart = document.querySelectorAll('.catalogue__item-cart');
+const cartItem = document.querySelector('.header__cart-item');
+
 const prevSlide = document.querySelector('.sale__controls-left');
 const nextSlide = document.querySelector('.sale__controls-right');
 const slide = document.querySelectorAll('.sale__slider-item-inner');
@@ -9,6 +12,13 @@ let currentSlide = 0;
 
 const authorImg = document.querySelector('.authors__image-img');
 const authorMin = document.querySelectorAll('.authors__min-img');
+
+
+cart.forEach(function(item, i){
+    item.addEventListener('click', function(){
+        cartItem.textContent++;
+    })
+})
 
 
 authorMin.forEach(function(item, i) {

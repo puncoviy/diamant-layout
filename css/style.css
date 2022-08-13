@@ -839,6 +839,8 @@ body {
 }
 
 .useful__title {
+    position: relative;
+    z-index: 1;
     text-align: center;
     margin-bottom: 80px;
 }
@@ -1226,6 +1228,16 @@ body {
     .statistics__text {
         width: 80%;
         margin: 0 auto 30px;
+    }
+    .useful__list {
+        flex-direction: row;
+        justify-content: center;
+        width: unset;
+        max-height: unset;
+    }
+    .useful__item:nth-child(1),
+    .useful__item:nth-child(4) {
+        margin-top: 0;
     }
 }
 

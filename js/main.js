@@ -12,6 +12,13 @@ const blackout = document.querySelector('.blackout');
 // cart
 const cart = document.querySelectorAll('.catalogue__item-cart');
 const cartItem = document.querySelector('.header__cart-item');
+const cartItemScale = [
+    { transform: 'scale(1.2)' },
+    { transform: 'scale(1)' }
+];
+const cartItemTiming = {
+    duration: 300
+}
 // sales_slide
 const prevSlide = document.querySelector('.sale__controls-left');
 const nextSlide = document.querySelector('.sale__controls-right');
@@ -48,6 +55,7 @@ burgerBtn.addEventListener('click', function(){
 // cart-Script
 cart.forEach(el => el.addEventListener('click', function(){
         cartItem.textContent++;
+        cartItem.animate(cartItemScale, cartItemTiming);
     })
 )
 // author_slide-Script
